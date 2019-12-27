@@ -28,16 +28,16 @@ const prod = {
   },
   cognito: {
     REGION: "us-west-2",
-    USER_POOL_ID: " us-west-2_easPOIbpW",
+    USER_POOL_ID: "us-west-2_easPOIbpW",
     APP_CLIENT_ID: "1b3euvmccipt4mp6sru4kq93lp",
     IDENTITY_POOL_ID: "us-west-2:b4f79e00-6e74-4024-97db-95515a73c72a"
   }
 };
 
 // Default to dev if not set
-const config = process.env.REACT_APP_STAGE === 'prod'
-  ? prod
-  : dev;
+const config = process.env.REACT_APP_STAGE === 'prod' ?
+  prod :
+  dev;
 
 export default {
   // Add common config values here
